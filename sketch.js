@@ -3,7 +3,7 @@ var car1 , car2 , car3, speed, weight, wall, deformation;
 
 function setup() {
   createCanvas(1600,400);
-  speed = random(55,70);
+  speed = random(55,90);
   weight = random(400,1500);
   car1 = createSprite(50, 150, 50, 30);
     car1.shapeColor = "purple";
@@ -30,7 +30,7 @@ function draw() {
     car1.shapeColor = "green";
     }
 
-     if(deformation === random(80,180) ){
+    if(deformation<180 && deformation>80 ){ 
     car1.shapeColor = "yellow";
     }
 
